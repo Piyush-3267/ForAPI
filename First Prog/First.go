@@ -20,6 +20,7 @@ func allArticles(w http.ResponseWriter, r *http.Request) {
 		Article{Title: "DemoTitle", Desc: "DemoDesc", Content: "DemoContent"},
 	}
 	fmt.Fprintf(w, "Welcome to the HomePage!")
+	fmt.Fprintf(w, "Welcome to the HomePae!")
 	fmt.Println("Endpoint Hit: homePage")
 	json.NewEncoder(w).Encode(articles)
 }
